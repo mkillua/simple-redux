@@ -3,7 +3,7 @@ import React from "react";
 import Card from "../Card";
 import { connect } from "react-redux";
 
-const Randomic = (props) => {
+const Raffle = (props) => {
   return (
     <Card green title="Sorteio de um  Numeros">
       <div>
@@ -24,4 +24,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect (mapStateToProps) (Randomic)
+export default connect (mapStateToProps) (Raffle)

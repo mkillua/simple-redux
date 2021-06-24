@@ -1,3 +1,8 @@
+import {
+  MINIMUM_VALUE_CHANGED,
+  MAXIMUM_VALUE_CHANGED
+} from '../constants/actions'
+
 const initialState = {
   min: 1,
   max: 100,
@@ -5,13 +10,13 @@ const initialState = {
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case "min_number_change":
+    case MINIMUM_VALUE_CHANGED:
       return {
         ...state,
         min: action.payload,
       };
 
-    case "max_number_change":
+    case MAXIMUM_VALUE_CHANGED:
       return {
         ...state,
         max: action.payload,
